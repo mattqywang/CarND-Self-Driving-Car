@@ -1,4 +1,5 @@
 <?xml version="1.0"?>
 <launch>
     <node pkg="tl_detector" type="tl_detector.py" name="tl_detector" output="screen" cwd="node"/>
+    <param name="light_classification_model_config" value="$(find tl_detector)/light_classification/frozen_sim_mobile/frozen_inference_graph.pb"/>
 </launch>
